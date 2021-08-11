@@ -1,0 +1,13 @@
+<h1>Update Your Blog!</h1>
+
+<%= form_with model: @blogs, method: :patch, local: true do |form| %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
+    <br>
+    <br>
+    <%= form.label :content %>
+    <%= form.text_field :content%>
+    <br>
+    <br>
+    <%= form.submit 'Edit your blog'%>
+  <% end %>
